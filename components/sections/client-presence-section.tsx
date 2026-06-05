@@ -4,9 +4,9 @@ import { ArrowRightIcon, GlobeIcon } from "@/components/ui/icons";
 
 export function ClientPresenceSection() {
   return (
-    <section className="bg-[#050506] px-5 py-16 sm:px-8">
+    <section className="bg-[#050506] px-5 py-14 sm:px-8 lg:py-16">
       <div className="mx-auto max-w-5xl text-center">
-        <h2 className="font-[var(--font-display)] text-3xl font-semibold text-[var(--text-white)] sm:text-4xl">
+        <h2 className="font-[var(--font-display)] text-2xl font-semibold text-[var(--text-white)] sm:text-4xl">
           Our Global Client Presence
         </h2>
         <div className="relative mt-5 overflow-hidden rounded-2xl border border-white/10 bg-[#08101a] shadow-[0_30px_100px_rgba(0,0,0,0.45)]">
@@ -15,7 +15,7 @@ export function ClientPresenceSection() {
             alt="Gold global client presence map with connected nodes"
             width={1536}
             height={1024}
-            className="h-auto w-full object-cover"
+            className="h-[240px] w-full object-cover sm:h-auto"
           />
           <div className="absolute left-[11%] top-[49%] hidden items-center gap-4 rounded-xl border border-[var(--gold-border)] bg-[rgba(16,24,39,0.82)] px-5 py-4 text-left backdrop-blur-md sm:flex">
             <GlobeIcon className="size-9 shrink-0 text-[var(--gold-light)]" />
@@ -24,7 +24,7 @@ export function ClientPresenceSection() {
             </p>
           </div>
         </div>
-        <LinkButton href="#case-studies" variant="outline" className="mt-7 min-w-64">
+        <LinkButton href="#case-studies" variant="outline" className="mt-7 w-full sm:w-auto sm:min-w-64">
           View All Case Studies <ArrowRightIcon className="size-5" />
         </LinkButton>
       </div>

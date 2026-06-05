@@ -5,7 +5,7 @@ import { caseStudies } from "@/data/site";
 
 export function CaseStudiesSection() {
   return (
-    <section id="case-studies" className="overflow-hidden border-y border-white/10 bg-[#070708] px-5 py-24 sm:px-8">
+    <section id="case-studies" className="overflow-hidden border-y border-white/10 bg-[#070708] px-5 py-16 sm:px-8 lg:py-24">
       <div className="mx-auto max-w-7xl">
         <div className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
           <SectionHeader
@@ -18,13 +18,13 @@ export function CaseStudiesSection() {
             View All →
           </a>
         </div>
-        <div className="mt-10 grid gap-5">
+        <div className="mt-8 grid gap-5 lg:mt-10">
           {caseStudies.map((study) => (
             <Card
               key={study.brand}
-              className="grid overflow-hidden p-0 md:grid-cols-[0.92fr_1.08fr_auto]"
+              className="grid overflow-hidden p-0 md:grid-cols-[0.92fr_1.08fr] xl:grid-cols-[0.92fr_1.08fr_auto]"
             >
-              <div className="relative min-h-[260px] overflow-hidden md:min-h-full">
+              <div className="relative min-h-[220px] overflow-hidden sm:min-h-[260px] md:min-h-full">
                 <Image
                   src={study.image}
                   alt={`${study.title} case study visual`}
@@ -34,11 +34,11 @@ export function CaseStudiesSection() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-black/5 via-black/10 to-black/55" />
               </div>
-              <div className="p-7 sm:p-9">
+              <div className="p-6 sm:p-9">
                 <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--gold)]">
                   {study.brand}
                 </p>
-                <h3 className="mt-4 max-w-xl font-[var(--font-display)] text-3xl font-semibold leading-tight text-[var(--text-white)]">
+                <h3 className="mt-4 max-w-xl font-[var(--font-display)] text-2xl font-semibold leading-tight text-[var(--text-white)] sm:text-3xl">
                   {study.title}
                 </h3>
                 <p className="mt-4 max-w-lg text-sm leading-7 text-[var(--text-gray)]">
@@ -51,7 +51,7 @@ export function CaseStudiesSection() {
                   View Case Study →
                 </a>
               </div>
-              <div className="flex items-end justify-start p-7 md:min-w-44 md:justify-center">
+              <div className="flex items-end justify-start px-6 pb-6 sm:px-9 md:col-span-2 xl:col-span-1 xl:min-w-44 xl:justify-center xl:p-7">
                 <div>
                   <p className="font-[var(--font-display)] text-5xl font-semibold text-[var(--gold-light)]">
                     {study.metric}

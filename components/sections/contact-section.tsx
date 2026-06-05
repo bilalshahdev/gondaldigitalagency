@@ -7,21 +7,21 @@ import { contactInfo, footerLinks, services } from "@/data/site";
 
 export function ContactSection() {
   return (
-    <footer id="contact" className="border-t border-white/10 px-5 pb-8 pt-20 sm:px-8">
+    <footer id="contact" className="scroll-mt-20 border-t border-white/10 px-4 pb-8 pt-12 sm:px-8 sm:pt-16 lg:pt-20">
       <div className="mx-auto max-w-7xl">
-        <Card className="overflow-hidden p-8 sm:p-10 lg:p-12">
+        <Card className="overflow-hidden rounded-xl p-5 sm:p-10 lg:p-12">
           <div className="text-center">
-            <p className="text-sm font-semibold text-[var(--text-gray)]">
+            <p className="text-xs font-semibold text-[var(--text-gray)] sm:text-sm">
               Start Your Digital Transformation Today
             </p>
-            <h2 className="mt-3 font-[var(--font-display)] text-4xl font-semibold leading-tight text-[var(--text-white)] sm:text-5xl">
+            <h2 className="mx-auto mt-3 max-w-3xl font-[var(--font-display)] text-2xl font-semibold leading-tight text-[var(--text-white)] min-[390px]:text-[28px] sm:text-5xl">
               Ready to Achieve Your Business Goals?
             </h2>
-            <p className="mt-3 text-sm text-[var(--text-gray)]">
+            <p className="mx-auto mt-3 max-w-lg text-sm leading-6 text-[var(--text-gray)]">
               Get a free consultation and custom strategy for your business.
             </p>
           </div>
-          <form className="mx-auto mt-8 grid max-w-5xl gap-4">
+          <form className="mx-auto mt-7 grid max-w-5xl gap-4 sm:mt-8">
             <div className="grid gap-4 md:grid-cols-2">
               <Input aria-label="Your name" placeholder="Your Name" />
               <Input aria-label="Email address" placeholder="Email Address" type="email" />
@@ -42,7 +42,7 @@ export function ContactSection() {
               Request Free Consultation
             </Button>
           </form>
-          <div className="mt-7 flex flex-wrap justify-center gap-5 text-sm text-[var(--text-gray)]">
+          <div className="mt-7 grid gap-3 text-sm text-[var(--text-gray)] sm:flex sm:flex-wrap sm:justify-center sm:gap-5">
             {["Free Consultation", "Custom Strategy", "24/7 Support", "100% Satisfaction"].map(
               (item) => (
                 <span key={item} className="inline-flex items-center gap-2">
@@ -55,7 +55,7 @@ export function ContactSection() {
             )}
           </div>
         </Card>
-        <div className="mt-12 grid gap-10 border-t border-white/10 pt-10 md:grid-cols-[1.2fr_0.8fr_1fr_1fr]">
+        <div className="mt-10 grid gap-9 border-t border-white/10 pt-10 sm:grid-cols-2 lg:mt-12 lg:grid-cols-[1.2fr_0.8fr_1fr_1fr]">
           <div>
             <Logo />
             <p className="mt-5 max-w-xs text-sm leading-7 text-[var(--text-gray)]">

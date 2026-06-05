@@ -9,7 +9,7 @@ import { SiteHeader } from "@/components/sections/site-header";
 
 export default function Home() {
   return (
-    <div className="page-scale min-h-screen overflow-x-hidden bg-[var(--bg-black)]">
+    <div className="min-h-screen overflow-x-hidden bg-[var(--bg-black)]">
       <SiteHeader />
       <main>
         <HeroSection />

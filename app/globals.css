@@ -119,14 +119,15 @@ body {
   filter: drop-shadow(0 0 10px rgba(245, 215, 122, 0.42));
 }
 
-.page-scale {
-  zoom: 0.85;
-}
+@media (max-width: 767px) {
+  .service-card {
+    min-height: auto;
+  }
 
-@supports not (zoom: 1) {
-  .page-scale {
-    transform: scale(0.85);
-    transform-origin: top center;
-    width: 117.647%;
+  .service-card::after {
+    right: -52px;
+    bottom: -54px;
+    width: 132px;
+    height: 132px;
   }
 }

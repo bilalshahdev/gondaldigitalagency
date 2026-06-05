@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import { Logo } from "@/components/logo";
-import { LinkButton } from "@/components/ui/button";
 import { navItems } from "@/data/site";
 import { cn } from "@/utils/cn";
 
@@ -35,10 +34,13 @@ export function SiteHeader() {
   }, []);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[rgba(11,11,12,0.78)] backdrop-blur-xl">
-      <div className="mx-auto flex h-20 w-full max-w-7xl items-center justify-between px-5 sm:px-8">
+    <header className="sticky inset-x-0 top-0 z-50 border-b border-white/10 bg-[rgba(11,11,12,0.92)] backdrop-blur-xl">
+      <div className="mx-auto flex h-16 w-full max-w-7xl items-center justify-between gap-4 px-4 sm:h-20 sm:px-8">
         <Logo />
-        <nav className="hidden items-center gap-8 lg:flex" aria-label="Primary navigation">
+        <nav
+          className="hidden items-center gap-4 md:flex lg:gap-8"
+          aria-label="Primary navigation"
+        >
           {navItems.map((item) => (
             <a
               key={item.id}
@@ -46,7 +48,7 @@ export function SiteHeader() {
               aria-current={activeSection === item.id ? "page" : undefined}
               onClick={() => setActiveSection(item.id)}
               className={cn(
-                "relative rounded-full px-3 py-2 text-sm font-medium transition",
+                "relative shrink-0 rounded-full px-3 py-2 text-sm font-medium transition",
                 activeSection === item.id
                   ? "bg-[rgba(212,175,55,0.12)] text-[var(--gold-light)] shadow-[0_0_22px_rgba(212,175,55,0.16)]"
                   : "text-[var(--text-gray)] hover:text-[var(--text-white)]",
@@ -62,9 +64,6 @@ export function SiteHeader() {
             </a>
           ))}
         </nav>
-        <LinkButton href="#contact" size="sm" className="hidden sm:inline-flex">
-          Book Strategy Call
-        </LinkButton>
       </div>
     </header>
   );
