@@ -1,0 +1,13 @@
+<svg width="760" height="520" viewBox="0 0 760 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="96" y="56" width="568" height="352" rx="26" fill="#080B12" stroke="#D4AF37" stroke-opacity=".42" stroke-width="2"/>
+  <rect x="124" y="86" width="512" height="288" rx="16" fill="#101827"/>
+  <rect x="150" y="118" width="210" height="118" rx="14" fill="#D4AF37" fill-opacity=".16" stroke="#D4AF37" stroke-opacity=".4"/>
+  <rect x="386" y="118" width="198" height="34" rx="10" fill="#F5D77A" fill-opacity=".85"/>
+  <rect x="386" y="176" width="168" height="16" rx="8" fill="#B6BCC8" fill-opacity=".45"/>
+  <rect x="386" y="206" width="198" height="16" rx="8" fill="#B6BCC8" fill-opacity=".32"/>
+  <rect x="150" y="264" width="126" height="76" rx="14" fill="#0B0B0C" stroke="#D4AF37" stroke-opacity=".35"/>
+  <rect x="302" y="264" width="126" height="76" rx="14" fill="#0B0B0C" stroke="#D4AF37" stroke-opacity=".35"/>
+  <rect x="454" y="264" width="126" height="76" rx="14" fill="#0B0B0C" stroke="#D4AF37" stroke-opacity=".35"/>
+  <path d="M52 424h656l-42 54H94L52 424Z" fill="#151515" stroke="#D4AF37" stroke-opacity=".25"/>
+  <path d="M326 424h108l-12 18h-84l-12-18Z" fill="#D4AF37" fill-opacity=".25"/>
+</svg>

@@ -1,0 +1,23 @@
+<svg width="720" height="720" viewBox="0 0 720 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="720" rx="40" fill="#0B0B0C"/>
+  <circle cx="360" cy="360" r="196" fill="url(#glow)" opacity=".55"/>
+  <circle cx="360" cy="360" r="168" stroke="#D4AF37" stroke-width="2"/>
+  <circle cx="360" cy="360" r="116" stroke="#D4AF37" stroke-opacity=".52" stroke-width="2"/>
+  <ellipse cx="360" cy="360" rx="64" ry="168" stroke="#F5D77A" stroke-opacity=".65" stroke-width="2"/>
+  <ellipse cx="360" cy="360" rx="168" ry="58" stroke="#F5D77A" stroke-opacity=".45" stroke-width="2"/>
+  <path d="M225 274c76 42 171 42 270 0M225 446c76-42 171-42 270 0" stroke="#D4AF37" stroke-opacity=".45" stroke-width="2"/>
+  <path d="M145 170h145a32 32 0 0 1 32 32v62a32 32 0 0 1-32 32H145a32 32 0 0 1-32-32v-62a32 32 0 0 1 32-32Z" fill="#101827" stroke="#D4AF37" stroke-opacity=".36"/>
+  <path d="M458 465h137a32 32 0 0 1 32 32v66a32 32 0 0 1-32 32H458a32 32 0 0 1-32-32v-66a32 32 0 0 1 32-32Z" fill="#101827" stroke="#D4AF37" stroke-opacity=".36"/>
+  <path d="M478 122h92a24 24 0 0 1 24 24v34a24 24 0 0 1-24 24h-92a24 24 0 0 1-24-24v-34a24 24 0 0 1 24-24Z" fill="#101827" stroke="#D4AF37" stroke-opacity=".32"/>
+  <path d="M154 219h122M154 248h74M466 520h106M466 548h65M484 164h63" stroke="#F5D77A" stroke-linecap="round" stroke-width="9"/>
+  <circle cx="513" cy="336" r="8" fill="#F5D77A"/>
+  <circle cx="312" cy="220" r="7" fill="#F5D77A"/>
+  <circle cx="267" cy="468" r="6" fill="#F5D77A"/>
+  <defs>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(360 360) rotate(90) scale(260)">
+      <stop stop-color="#F5D77A" stop-opacity=".75"/>
+      <stop offset=".48" stop-color="#D4AF37" stop-opacity=".25"/>
+      <stop offset="1" stop-color="#0B0B0C" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>

@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+:root {
+  --bg-black: #0b0b0c;
+  --bg-card: #101827;
+  --gold: #d4af37;
+  --gold-light: #f5d77a;
+  --text-white: #f8fafc;
+  --text-gray: #b6bcc8;
+  --gold-border: rgba(212, 175, 55, 0.4);
+  --background: var(--bg-black);
+  --foreground: var(--text-white);
+  --font-display: "Clash Display", "Satoshi", "Inter", system-ui, sans-serif;
+  --font-body: "Satoshi", "Inter", "Manrope", system-ui, sans-serif;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--bg-black);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
+}
+
+::selection {
+  background: rgba(212, 175, 55, 0.32);
+  color: var(--text-white);
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #f5d77a, #d4af37);
+}
+
+.premium-card {
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  background:
+    radial-gradient(circle at 88% 88%, rgba(212, 175, 55, 0.2), transparent 34%),
+    radial-gradient(circle at 12% 0%, rgba(245, 215, 122, 0.08), transparent 26%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0)),
+    var(--bg-card);
+  backdrop-filter: blur(16px);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    inset 0 -1px 18px rgba(212, 175, 55, 0.08),
+    0 24px 80px rgba(0, 0, 0, 0.35);
+}
+
+.gold-text {
+  background: linear-gradient(135deg, #f8e79f, #d4af37 55%, #af8522);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.site-grid {
+  background-image:
+    linear-gradient(rgba(212, 175, 55, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(212, 175, 55, 0.05) 1px, transparent 1px);
+  background-size: 72px 72px;
+}
+
+.gold-border-glow {
+  box-shadow:
+    0 0 0 1px rgba(212, 175, 55, 0.22),
+    0 0 28px rgba(212, 175, 55, 0.12),
+    inset 0 0 28px rgba(212, 175, 55, 0.08);
+}
+
+.service-card {
+  position: relative;
+  border: 1px solid rgba(212, 175, 55, 0.58);
+  background:
+    radial-gradient(circle at 91% 86%, rgba(245, 215, 122, 0.24), transparent 35%),
+    radial-gradient(circle at 8% 0%, rgba(255, 255, 255, 0.08), transparent 26%),
+    linear-gradient(145deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0) 42%),
+    #090a0b;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    inset 0 -28px 42px rgba(212, 175, 55, 0.08),
+    0 0 18px rgba(212, 175, 55, 0.12);
+}
+
+.service-card::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  border-radius: inherit;
+  pointer-events: none;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), transparent 32%);
+}
+
+.service-card::after {
+  content: "";
+  position: absolute;
+  right: -34px;
+  bottom: -42px;
+  width: 145px;
+  height: 145px;
+  border-radius: 999px;
+  background: rgba(245, 215, 122, 0.12);
+  filter: blur(28px);
+  pointer-events: none;
+}
+
+.service-icon {
+  filter: drop-shadow(0 0 10px rgba(245, 215, 122, 0.42));
+}
+
+.page-scale {
+  zoom: 0.85;
+}
+
+@supports not (zoom: 1) {
+  .page-scale {
+    transform: scale(0.85);
+    transform-origin: top center;
+    width: 117.647%;
+  }
+}
