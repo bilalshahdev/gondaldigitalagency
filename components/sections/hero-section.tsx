@@ -8,7 +8,7 @@ export function HeroSection() {
     <section id="home" className="relative overflow-hidden bg-[#050506] px-4 pb-10 pt-6 sm:px-8 lg:pb-16 lg:pt-12">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_78%_32%,rgba(212,175,55,0.18),transparent_34%),linear-gradient(90deg,#050506_0%,rgba(5,5,6,0.96)_35%,rgba(5,5,6,0.55)_66%,#050506_100%)]" />
       <div className="relative mx-auto max-w-7xl">
-        <div className="relative overflow-hidden rounded-[1.75rem] border border-white/10 bg-black/20 px-5 pb-5 pt-7 shadow-[0_30px_110px_rgba(0,0,0,0.42)] sm:px-7 sm:pt-9 lg:grid lg:min-h-[560px] lg:grid-cols-[0.86fr_1.14fr] lg:items-center lg:overflow-visible lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none">
+        <div className="relative overflow-hidden rounded-[1.75rem] border border-white/10 bg-black/20 px-5 pb-5 pt-7 shadow-[0_30px_110px_rgba(0,0,0,0.42)] sm:px-7 sm:pt-9 lg:grid lg:min-h-[560px] lg:grid-cols-[0.86fr_1.14fr] lg:items-center lg:gap-8 lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none">
           <div className="absolute inset-x-0 bottom-0 h-[42%] bg-[radial-gradient(circle_at_70%_62%,rgba(212,175,55,0.2),transparent_58%)] lg:hidden" />
           <div className="relative z-10 max-w-2xl text-left">
             <div className="inline-flex max-w-full rounded border border-[var(--gold-border)] bg-[rgba(212,175,55,0.08)] px-3 py-1.5 text-[9px] font-semibold uppercase tracking-[0.13em] text-[var(--gold-light)] sm:text-xs">
@@ -36,20 +36,20 @@ export function HeroSection() {
             </div>
           </div>
 
-          <div className="relative z-0 mt-5 hidden aspect-[1.78] min-h-[178px] overflow-hidden rounded-2xl sm:mt-7 sm:block sm:min-h-[300px] lg:absolute lg:inset-y-0 lg:right-[-8%] lg:mt-0 lg:h-full lg:w-[66%] lg:overflow-visible lg:rounded-none">
+          <div className="relative z-0 mt-5 hidden aspect-[1.78] min-h-[178px] overflow-hidden rounded-2xl sm:mt-7 sm:block sm:min-h-[300px] lg:mt-0 lg:h-[520px] lg:min-h-0 lg:w-full lg:rounded-none lg:border-0">
             <Image
               src="/assets/hero-gold-globe.png"
               alt="3D gold Gondal emblem with floating digital interface cards"
               fill
               priority
               sizes="(max-width: 1024px) 100vw, 58vw"
-              className="object-cover object-[58%_center] opacity-95 lg:object-center lg:mix-blend-screen lg:drop-shadow-[0_32px_90px_rgba(212,175,55,0.24)]"
+              className="object-cover object-center opacity-95 lg:mix-blend-screen lg:drop-shadow-[0_32px_90px_rgba(212,175,55,0.24)]"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#050506] via-transparent to-transparent lg:hidden" />
           </div>
         </div>
 
-        <div className="gold-border-glow relative mt-5 grid overflow-hidden rounded-xl border border-white/10 bg-black/70 sm:grid-cols-2 lg:-mt-4 lg:grid-cols-4">
+        <div className="gold-border-glow relative mt-8 grid overflow-hidden rounded-xl border border-white/10 bg-black/70 sm:grid-cols-2 lg:mt-6 lg:grid-cols-4">
           {stats.map((stat) => (
             <div
               key={stat.label}
