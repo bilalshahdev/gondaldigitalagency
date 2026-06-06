@@ -95,8 +95,8 @@ export const process = [
 export const footerLinks = ["About Us", "Services", "Case Studies", "Pricing", "Contact Us"];
 
 export const contactInfo = [
-  "info@gondaldigitalagency.com",
-  "+92 300 1234567",
+  "sherazgondal5212@gmail.com",
+  "WhatsApp: +92 308 8001889",
   "Lahore, Pakistan",
   "www.gondaldigitalagency.com",
 ];
